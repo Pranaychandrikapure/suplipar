@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:suplipar/pages/setting_page.dart';
+import 'package:suplipar/pages/conceirt.dart';
 import 'package:suplipar/widgets/dark_button.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
@@ -216,7 +217,10 @@ class _ProfilePageState extends State<ProfilePage> {
                         ),
                         DarkButton(
                           onPressed: () {
-                            // Add the logic for opening the email app
+                             Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder:(context) => HomePage()),
+                  );
                           },
                           text: "SAVE",
                           backgroundColor:
